@@ -1034,6 +1034,7 @@ keyboard_button.addEventListener('click', function(e){
 			item.addEventListener('click',function(){
 				keyboard_area.value += this.dataset.name;
 				keyboard_area.focus()
+				console.log(keyboard_area.value)
 			},true)
 		})
 	}
