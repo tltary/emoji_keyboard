@@ -252,12 +252,9 @@ body {
 .keyboard__item {
   flex: 0 0 10%;
   max-width: 10%;
-  padding: 10px 0px;
   border: 1px #fff solid;
   transition: border .3s ease-in-out;
   text-align: center;
-  height: 38px;
-  max-height: 38px;
   cursor: pointer; }
   .keyboard__item:hover {
     border: 1px #3e3e3e solid; }
