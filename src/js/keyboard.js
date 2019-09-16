@@ -4088,7 +4088,7 @@ const keyboard_button_block = document.querySelector('.js-keyboard-button-block'
 keyboard_button.addEventListener('click', function(e){
 	if (document.querySelector('.js-keyboard-content')) {
 		document.querySelector('.js-keyboard-content').remove();
-		keyboard_button.textContent = 'Emoji open';
+		keyboard_button.textContent = 'VK Emoji open';
 	} else {
 		let div = document.createElement('div');
 		div.className = 'js-keyboard-content keyboard__content';
@@ -4097,7 +4097,7 @@ keyboard_button.addEventListener('click', function(e){
 			render += `<span data-name="${item[0]}" class="js-keyboard-item keyboard__item"><img src="${item[1]}"></span>`
 		});
 		div.innerHTML = render;
-		keyboard_button.textContent = 'Emoji close';
+		keyboard_button.textContent = 'VK Emoji close';
 		keyboard_button_block.append(div);
 		let keyboard_item = document.querySelectorAll('.js-keyboard-item');
 		keyboard_item.forEach(function(item){
